@@ -456,7 +456,7 @@ export default function ChatPage() {
                 key={msg.id}
                 className={`flex ${msg.user.name === demoUser.name ? 'justify-end' : 'justify-start'} group`}
               >
-                <div className={`rounded-2xl p-3 ${msg.user.name === demoUser.name ? 'max-w-sm bg-purple-600' : 'max-w-2xl bg-white/10 border border-purple-500'} text-sm shadow-md 
+                <div className={`rounded-2xl p-3 ${msg.user.name === demoUser.name ? 'max-w-sm' : 'max-w-2xl bg-white/10'} text-sm shadow-md 
                   ${msg.user.name === demoUser.name
                     ? 'text-white rounded-br-none'
                     : 'text-purple-100 rounded-bl-none'
