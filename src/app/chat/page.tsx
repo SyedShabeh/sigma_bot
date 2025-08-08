@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { logout } from '../logout/actions';
 import { createClient } from '@/utils/supabase/client';
+import SplashCursor from '../../../components/SplashCursor';
 
 const demoUser = {
   name: 'You',
@@ -127,6 +128,7 @@ const [messages, setMessages] = useState<Message[]>([]);
 
   return (
     <div className="flex flex-col h-screen bg-gradient-to-br from-[#f1f1f7] via-[#e0e7ff] to-[#dbeafe]">
+      <SplashCursor/>
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 bg-white shadow-md">
         <div className="flex items-center gap-3">

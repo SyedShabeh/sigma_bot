@@ -1,8 +1,10 @@
+import SplashCursor from "../../components/SplashCursor";
 import { logout } from "./logout/actions";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-8 font-sans bg-white dark:bg-black">
+      <SplashCursor/>
       {/* Heading */}
       <h1 className="text-4xl font-bold text-center mb-8">
         Welcome to Sigma bot
