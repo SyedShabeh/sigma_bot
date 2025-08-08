@@ -418,7 +418,7 @@ export default function ChatPage() {
             <div className="h-10 w-10 bg-purple-500 rounded-full flex items-center justify-center shadow">
               <FaRobot className="text-white" />
             </div>
-            <h1 className="text-xl font-bold tracking-tight">Grok AI</h1>
+            <h1 className="text-xl font-bold tracking-tight">SIGMA AI</h1>
           </div>
           <div className="flex items-center gap-2">
             <button
