@@ -130,10 +130,10 @@ const [messages, setMessages] = useState<Message[]>([]);
     <div className="flex flex-col h-screen bg-gradient-to-br from-[#f1f1f7] via-[#e0e7ff] to-[#dbeafe]">
       <SplashCursor/>
       {/* Header */}
-      <header className="flex items-center justify-between px-6 py-4 bg-white shadow-md">
+      <header className="flex items-center justify-between px-6 py-4 bg-gray-600 shadow-md z-50">
         <div className="flex items-center gap-3">
           <Image src={botUser.avatar} alt="Bot" width={40} height={40} className="h-10 w-10 rounded-full border-2 border-purple-400" />
-          <span className="text-xl font-bold text-purple-700">AI Chatbot</span>
+          <span className="text-xl font-bold text-purple-700">SIGMA BOT</span>
         </div>
         <form action={logout}>
           <button
@@ -146,7 +146,7 @@ const [messages, setMessages] = useState<Message[]>([]);
       </header>
 
       {/* Chat Area */}
-      <main className="flex-1 overflow-auto px-2 py-8">
+      <main className="flex-1 overflow-auto px-2 py-8 bg-black">
         <div className="max-w-2xl mx-auto flex flex-col gap-5">
           {messages.map((msg, idx) => (
             <div
@@ -176,7 +176,7 @@ const [messages, setMessages] = useState<Message[]>([]);
           {botTyping && (
             <div className="flex items-end gap-3 justify-start animate-fade-in">
               <Image src={botUser.avatar} alt={botUser.name} width={40} height={40} className="h-10 w-10 rounded-full border-2 border-purple-200 shadow animate-avatar-pop" />
-              <div className="p-4 rounded-3xl shadow-xl max-w-[75%] glass-bubble relative bg-white bg-opacity-70 text-purple-900 border border-purple-100 rounded-bl-none backdrop-blur-xl">
+              <div className="p-4 rounded-3xl shadow-xl max-w-[75%] glass-bubble relative bg-gray-600 bg-opacity-70 text-purple-900 border border-purple-100 rounded-bl-none backdrop-blur-xl">
                 <div className="text-base font-medium flex items-center gap-2">
                   <span className="inline-flex">
                     <span className="dot dot1"></span>
